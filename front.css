@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    border: 10px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: content-box;
+}
+h1{
+    text-align: center;
+    color: green;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+nav{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+}
+
+nav>ul{
+    list-style-type: none;
+}
+
+nav>ul>a{
+    display: inline-block; 
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.20 ease-in;
+    font-size: 18px;    
+}
+nav>ul>a:hover{
+  background-color: green;
+  color: white;
+}
+#Search{
+    width: 200px;
+    height: 25px;
+}
+h3{
+    display: inline-block;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    padding: 30px 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.item>img{ 
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.item>h4{
+    padding: 5px;
+    text-align: center;
+}
+.item>button:hover{
+    color: white;
+}
+.item>button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item>button:hover{
+    transform: scale(1.0);
+}
+
+.last{
+    top: 50px;
+    height: 100px;
+    background-color:lightgreen; 
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.last>.con>span{
+    font-family: mv boli;
+    color:red;
+} 
+/* .last>.icon{
+   margin-top: 10px;
+   font-size: 14px;
+} */
+.last>.icon>a{
+    text-decoration: none;
+    color: green;
+    font-family: fantasy;
+}
+
+.change{
+    border-top: 10px;
+    margin-left: 550px;
+    background-color: lime;
+    display:run-in;
+    /* width: 8px; */
+    position: relative;
+    color: black;
+    size: 4px;
+    padding: 5px;
+    animation: name 3s;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+.change:hover{
+  transform: scale(1.1);
+}
+
+.loader-container{
+    position: fixed;
+    top: 0;left:0;
+    z-index: 10000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.loader-container.fade-out{
+    top:-120%;
+}
+.credit{
+    color: black;
+    background-color:lightgreen;
+    height: auto;
+    width: 100%;
+}
+.credit span{
+    color: red;
+}
+
+ @media screen and (max-width:800px){
+       .items{
+        grid-template-columns: repeat(2,1fr);  
+       }    
+}
+@media screen and (max-width:200px){
+    .items{
+     grid-template-columns: repeat(1,1fr);     
+    }    
+}

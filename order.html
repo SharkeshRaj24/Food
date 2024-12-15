@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food 'O' Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+     * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        box-sizing: content-box;
+        background-color: lime;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+    button{
+    border: none;
+    outline: none;
+    /* margin-left: 600px; */
+    color:black;
+    background-color: lime;
+    animation-duration: 2s;
+    cursor: pointer;
+    font-family: mv boli;
+    
+}
+button:hover{
+    color: yellow;
+    text-size-adjust: 5px;
+    
+
+}
+a>button>span{
+  font-size: 25px;
+}
+#submit{
+    background-color: lightblue;
+    color: blue;
+    font-size: 20px;
+    width: 70px;
+    height: 20px;
+}
+#submit:hover{
+    color: red;
+}
+#input{
+    background-color: aquamarine;
+}
+
+
+</style>
+<body>
+    <h1>Namaku Soru Dhan Mukkiyam🥘🍲🍗</h1>
+    <br> <hr> <br> <br> <br>
+
+    <h2>Payment Mode</h2>
+    <br><br>
+
+    <form name="form" onsubmit="check()">
+         Enter Your Name          : <input id="input" type="text" placeholder="Name UseUppercase" name="name"><br> <br>
+         Enter your Gmail         : <input id="input" type="gmail"  placeholder="gmail" name="gmail"> <br> <br>
+         Enter Your Address       : <input id="input" type="address" placeholder="Address" name="Address"> <br> <br>
+         Enter Your Food Name     : <input id="input" type="text" placeholder="Food Name" name="foodname"><br><br>
+         Enter Food Quantity      : <input id="input" type="number" placeholder="Quantity" name="Quantity"> <br> <br>
+         Select your Payment Mode : <input id="input" type="radio" name="pay">Cash On delevery <input type="radio" name="pay">Online Mode <br> <br>
+
+         <input id="submit" type="submit">
+
+
+
+    </form> <br> <br>  
+
+
+
+
+
+
+    <a href="front.html">
+        <button><span> Home </span></button></a>
+        
+
+        <!-- <footer>
+  
+            <div class="last">
+              <h3 class="con">CONTECT <span>US</span></h3>
+              <div class="icon"> 
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>&nbsp; #Food 'o' Food <br></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i>&nbsp; #Food For Ever <br></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i>&nbsp; #Namaku soru dhan mukkiyam <br></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>&nbsp; #sorudhanmukkiyam@gmail.com <br></a>
+                <h5 class="credit">@Credit by <span>Mr.Sharp Designer</span> all rights reserved!</h5>
+              </div>
+             </div>
+          
+          </footer> -->
+
+
+          <script src="front.js"></script>
+</body>
+</html>
